@@ -3,7 +3,7 @@ import styled from "styled-components"
 export default function Login() {
   const handleClick = () => {
     const clientId = "9cfe8b9d1be34d62acdc495555f8570d";
-    const redirectUrl = "htps://localhost:3000/";
+    const redirectUrl = "http://localhost:3000/";
     const apiUrl = "https://accounts.spotify.com/authorize";
     const scope = [
       "user-read-email",
@@ -15,9 +15,9 @@ export default function Login() {
     "user-top-read",
     "user-read-recently-played"
   ];
-    window.location.href = `${apiUrl}?client_id=${clientId}&redirect_url=${redirectUrl}&scope=${scope.join(
-      ""
-      )}&response_type=token&show_dialog=true`;
+    window.location.href = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scope.join(
+      " "
+      )}&response_type=token&show_daialog=true`;
   };
   return <Container>
     <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Black.png" alt="bookfy" />
