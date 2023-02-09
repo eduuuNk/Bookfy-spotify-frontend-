@@ -1,10 +1,10 @@
 import React from 'react'
-import Login from './components/Login'
+import Loginform from './components/Login/loginform.js';
 
 export default function App() {
   return ( 
   <div>
-    <Login />
+    <Loginform />
     </div>
   ); 
 }
